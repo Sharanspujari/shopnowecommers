@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.jpg";
+import { IoIosSearch } from "react-icons/io";
+import SelectDropdown from "./dropdown/SelectDropdown";
 const Header = () => {
   return (
     <header className="w-full  h-auto m-auto py-[30px] mx-0">
@@ -11,16 +13,16 @@ const Header = () => {
 
           {/*header Search start here */}
           <div className="w-5/12 flex items-center">
-            <div className="  w-full py-2 px-4 h-[48px] flex items-center border border-cyan-500 ">
-              <div className="pointer w-[20%] text-[16px] font-500 relative">
-                All Categories
-                <span className="absolute top-0  right-0 w-[1px] h-[30px] bg-gray-300"></span>
-              </div>
-              <div className="w-[80%] pl-[30px]">
+            <div className="  w-full py-2 px-4 h-[48px] flex items-center border border-[#bce3c9] rounded-sm ">
+              <SelectDropdown />
+
+              <div className="w-[79%] pl-[30px] relative">
                 <input
                   type="text"
                   className="w-full text-[16px] h-[38px] border-none outline-none"
+                  placeholder="Search for items..."
                 />
+                <IoIosSearch className="pointer absolute top-2 right-0 opacity-[0.6] text-[23px]" />
               </div>
             </div>
           </div>

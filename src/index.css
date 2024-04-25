@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+ width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
 @layer components {
   .pointer {
     @apply cursor-pointer;
   }
-  
+  .listItem {
+    @apply list-none text-[16px] w-full p-[10px] hover:bg-cyan-500;
+  }
 }
