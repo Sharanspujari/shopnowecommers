@@ -13,6 +13,6 @@
     @apply cursor-pointer;
   }
   .listItem {
-    @apply list-none text-[16px] w-full p-[10px] hover:bg-cyan-500;
+    @apply list-none text-[17px] w-full p-[10px] hover:bg-cyan-500 text-[rgba(0,0,0,0.7)];
   }
 }

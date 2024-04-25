@@ -5,7 +5,7 @@ import SelectDropdown from "./dropdown/SelectDropdown";
 const Header = () => {
   return (
     <header className="w-full  h-auto m-auto py-[30px] mx-0">
-      <div className="py-0 px-[45px] ">
+      <div className="py-0 px-[45px] relative">
         <div className="flex">
           <div className="w-1/6">
             <img src={logo} className="h-16 w-20" />
@@ -13,10 +13,12 @@ const Header = () => {
 
           {/*header Search start here */}
           <div className="w-5/12 flex items-center">
-            <div className="  w-full py-2 px-4 h-[48px] flex items-center border border-[#bce3c9] rounded-sm ">
+            <div className="relative  w-full py-2 px-4 h-[48px] flex items-center border border-[#bce3c9] rounded-sm ">
               <SelectDropdown />
 
-              <div className="w-[79%] pl-[30px] relative">
+              <div className="w-[75%] pl-[30px] relative">
+                <span className="absolute top-1  left-2 w-[1px] h-[30px] bg-gray-300"></span>
+
                 <input
                   type="text"
                   className="w-full text-[16px] h-[38px] border-none outline-none"
@@ -27,6 +29,9 @@ const Header = () => {
             </div>
           </div>
           {/* header search end here */}
+          <div className="w-5/12">
+            <SelectDropdown />
+          </div>
         </div>
       </div>
     </header>
