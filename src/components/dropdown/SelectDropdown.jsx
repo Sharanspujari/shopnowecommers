@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { ClickAwayListener } from "@mui/base";
+
 const SelectDropdown = ({ dataList, placeholder, icon }) => {
+  console.log("dataList: ", dataList);
   const [isOpenSelect, setIsOpenSelect] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedItem, setSelectedItem] = useState(placeholder);
+  const [data, setData] = useState(dataList);
+  console.log("data: ", data);
+  const [data2, setData2] = useState(dataList);
+  console.log("data2: ", data2);
 
   const openSelect = () => {
     setIsOpenSelect((prev) => setIsOpenSelect(!prev));
@@ -17,6 +23,15 @@ const SelectDropdown = ({ dataList, placeholder, icon }) => {
     setIsOpenSelect(false);
   };
 
+  const handleSearch = (e) => {
+    const { value } = e.target;
+    console.log("value: ", value);
+    const isFiltered = data2.filter((sdata, i) => {
+      return sdata.toLowerCase().includes(value.toLowerCase());
+    });
+    setData(isFiltered);
+  };
+
   return (
     <ClickAwayListener onClickAway={() => setIsOpenSelect(false)}>
       <div className=" dropSelect pointer w-[26%] text-[16px]    font-500 relative">
@@ -27,7 +42,9 @@ const SelectDropdown = ({ dataList, placeholder, icon }) => {
             icon && "text-[#279a65]"
           }`}
         >
-          {selectedItem}
+          {selectedItem.length > 14
+            ? selectedItem.substr(0, 14) + "..."
+            : selectedItem}
           <MdKeyboardArrowDown className=" absolute  top-5 right-1 text-[19px]" />
         </span>
 
@@ -36,6 +53,7 @@ const SelectDropdown = ({ dataList, placeholder, icon }) => {
             <div>
               <input
                 type="text"
+                onChange={handleSearch}
                 className=" w-full h-[40px] border border-[#bce3c9] outline-none py-0 px-[15px] rounded-sm"
                 placeholder="Search here..."
               />
@@ -50,7 +68,7 @@ const SelectDropdown = ({ dataList, placeholder, icon }) => {
                 >
                   {placeholder}
                 </li>
-                {dataList?.map((item, i) => {
+                {data?.map((item, i) => {
                   return (
                     <li
                       key={i + 1}
