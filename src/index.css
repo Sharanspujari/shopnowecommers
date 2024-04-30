@@ -10,6 +10,9 @@
 }
 
 @layer components {
+  .bgColor {
+    @apply bg-cyan-600;
+  }
   .pointer {
     @apply cursor-pointer;
   }
@@ -19,6 +22,4 @@
   .menuText {
     @apply text-[16px];
   }
-
-  
 }
