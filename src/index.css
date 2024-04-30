@@ -17,9 +17,12 @@
     @apply cursor-pointer;
   }
   .listItem {
-    @apply list-none text-[17px] w-full p-[10px] hover:bg-cyan-500 text-[rgba(0,0,0,0.7)];
+    @apply list-none text-[17px] w-full p-[10px] hover:bg-cyan-600 text-[rgba(0,0,0,0.7)];
   }
   .menuText {
     @apply text-[16px];
+  }
+  .navLi{
+    @apply py-2.5 px-5 me-2 mb-2 text-[rgba(0,0,0,0.8)] text-[17px] font-medium text-gray-900 focus:outline-none bg-white   hover:text-cyan-700 focus:z-10 ;
   }
 }

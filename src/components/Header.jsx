@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <>
       <header className="w-full  h-auto m-auto py-[30px] mx-0">
-        <div className="py-0 px-[45px] relative ">
+        <div className="py-0 px-[45px]  relative ">
           <div className="flex items-center ">
             <div className="w-1/6">
               <img src={logo} className="h-16 w-20" />
