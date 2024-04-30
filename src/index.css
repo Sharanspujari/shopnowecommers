@@ -9,7 +9,6 @@
   background: #ccc;
 }
 
-
 @layer components {
   .pointer {
     @apply cursor-pointer;
@@ -17,7 +16,9 @@
   .listItem {
     @apply list-none text-[17px] w-full p-[10px] hover:bg-cyan-500 text-[rgba(0,0,0,0.7)];
   }
- .menuText{
-  @apply text-[16px] 
- }
+  .menuText {
+    @apply text-[16px];
+  }
+
+  
 }

@@ -61,7 +61,7 @@ const SelectDropdown = ({ dataList, placeholder, icon }) => {
               <ul className="w-full m-0 mt-[10px] py-[10px] px-0 max-h-64 overflow-y-scroll">
                 <li
                   key={0}
-                  className={`listItem ${
+                  className={`listItem rounded-md ${
                     selectedIndex === 0 ? "bg-gray-200 font-bold" : ""
                   }`}
                   onClick={() => closeSelect(0, placeholder)}
@@ -72,8 +72,8 @@ const SelectDropdown = ({ dataList, placeholder, icon }) => {
                   return (
                     <li
                       key={i + 1}
-                      className={`listItem ${
-                        selectedIndex === i + 1 ? "bg-gray-200 font-bold" : ""
+                      className={`listItem rounded-md ${
+                        selectedIndex === i + 1 ? "bg-gray-200 font-bold " : ""
                       }`}
                       onClick={() => closeSelect(i + 1, item)}
                     >
