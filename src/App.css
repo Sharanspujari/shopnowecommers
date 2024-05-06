@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&family=Reem+Kufi:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   font-family: "Robot", "sans-serif";
 }
@@ -6,15 +6,19 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Readex Pro, Reeem Kufi, Work Sans;
 }
 
 .countryWrapper .dropSelect {
-  width: 210px;
+  width: 190px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 5px;
   margin-left: 10px;
   padding-left: 10px;
-  height: 46px;
+  height: 50px;
+  /* border: ; */
+  border-radius: 3px;
+  border: 2px solid #bce3c9;
   display: flex;
   align-items: center;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
@@ -22,6 +26,7 @@ body {
 .countryWrapper .dropSelect .openSelect {
   width: 100%;
   left: 0px;
+  
 }
 .countryWrapper .dropSelect .menu {
   position: absolute;

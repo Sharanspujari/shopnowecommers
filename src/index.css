@@ -19,10 +19,16 @@
   .listItem {
     @apply list-none text-[17px] w-full p-[10px] hover:bg-cyan-600 text-[rgba(0,0,0,0.7)];
   }
-  .menuText {
-    @apply text-[16px];
+  .accountDropLi {
+    @apply flex list-none m-0  h-10;
   }
-  .navLi{
-    @apply py-2.5 px-4 me-2 mb-2 text-[rgba(0,0,0,0.8)] text-[17px] font-medium text-gray-900 focus:outline-none bg-white flex items-center  hover:text-cyan-700 focus:z-10 ;
+  .menuText {
+    @apply text-[16px] text-gray-600;
+  }
+  .navLi {
+    @apply py-1 px-4  text-[rgba(0,0,0,0.8)] text-[16px] font-medium text-gray-700 focus:outline-none bg-white flex items-center  hover:text-green-600 ;
+  }
+  .accountDropdownBtn {
+    @apply py-4 px-5  m-2 text-[14px] w-[94%] flex items-center w-full font-medium text-gray-500 focus:outline-none bg-white rounded-md hover:bg-gray-100 hover:text-green-500  focus:z-10;
   }
 }

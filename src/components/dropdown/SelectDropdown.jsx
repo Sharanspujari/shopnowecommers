@@ -34,18 +34,18 @@ const SelectDropdown = ({ dataList, placeholder, icon }) => {
 
   return (
     <ClickAwayListener onClickAway={() => setIsOpenSelect(false)}>
-      <div className=" dropSelect pointer w-[26%] text-[16px]    font-500 relative">
+      <div className=" dropSelect pointer w-[30%] text-[16px]  z-50  font-500 relative">
         {icon}
         <span
           onClick={openSelect}
-          className={`openSelect block py-[15px] px-0 ${
-            icon && "text-[#279a65]"
+          className={`openSelect block py-[15px] px-4   text-[15px] ${
+            icon && "text-[#279a65] "
           }`}
         >
           {selectedItem.length > 14
             ? selectedItem.substr(0, 14) + "..."
             : selectedItem}
-          <MdKeyboardArrowDown className=" absolute  top-5 right-1 text-[19px]" />
+          <MdKeyboardArrowDown className=" absolute  top-5 right-1 text-[17px] text-gray-500" />
         </span>
 
         {isOpenSelect && (
