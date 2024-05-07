@@ -31,4 +31,5 @@
   .accountDropdownBtn {
     @apply py-4 px-5  m-2 text-[14px] w-[94%] flex items-center w-full font-medium text-gray-500 focus:outline-none bg-white rounded-md hover:bg-gray-100 hover:text-green-500  focus:z-10;
   }
+
 }

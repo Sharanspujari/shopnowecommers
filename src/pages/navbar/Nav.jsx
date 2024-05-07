@@ -148,7 +148,7 @@ const Nav = () => {
                   </button>
                 </li>
 
-                <li className="ml-1  z-0 relative group">
+                <li className="ml-1 z-20 relative group">
                   <Link>
                     <button type="button" className="navLi">
                       {" "}

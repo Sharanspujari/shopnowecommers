@@ -1,9 +1,25 @@
-import React from 'react'
+import React from "react";
+import SliderPage from "./SliderPage";
+import { RiArrowLeftSLine } from "react-icons/ri";
+import { RiArrowRightSLine } from "react-icons/ri";
+import CategorySlider from "../components/categorySlider/CategorySlider";
 
 const Home = () => {
-  return (
-    <div></div>
-  )
-}
+  // const PrevArrow = (props) => {
+  //   const { onClick } = props;
+  //   return <RiArrowLeftSLine onClick={onClick} />;
+  // };
 
-export default Home
+  // const NextArrow = (props) => {
+  //   const { onClick } = props;
+  //   return <RiArrowRightSLine onClick={onClick} />;
+  // };
+  return (
+    <div>
+      <SliderPage />
+      <CategorySlider />
+    </div>
+  );
+};
+
+export default Home;

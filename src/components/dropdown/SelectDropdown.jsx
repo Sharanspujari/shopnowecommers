@@ -38,14 +38,14 @@ const SelectDropdown = ({ dataList, placeholder, icon }) => {
         {icon}
         <span
           onClick={openSelect}
-          className={`openSelect block py-[15px] px-4   text-[15px] ${
-            icon && "text-[#279a65] "
+          className={`openSelect block py-[15px] px-4 text-[15px] ${
+            icon && "text-[#279a65]"
           }`}
         >
           {selectedItem.length > 14
             ? selectedItem.substr(0, 14) + "..."
             : selectedItem}
-          <MdKeyboardArrowDown className=" absolute  top-5 right-1 text-[17px] text-gray-500" />
+          <MdKeyboardArrowDown className="downarrow absolute top-5 right-1 text-[17px] text-gray-500" />
         </span>
 
         {isOpenSelect && (

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&family=Reem+Kufi:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+
 body {
   font-family: "Robot", "sans-serif";
 }
@@ -26,7 +29,12 @@ body {
 .countryWrapper .dropSelect .openSelect {
   width: 100%;
   left: 0px;
-  
+}
+.countryWrapper .dropSelect .openSelect .downarrow{
+  position: absolute;
+  top:15px;
+  right:10px;
+
 }
 .countryWrapper .dropSelect .menu {
   position: absolute;
@@ -44,4 +52,38 @@ body {
   text: capitalize;
   font-size: 16px;
   padding: 10px 15px;
+}
+.slick-arrow {
+  position: absolute;
+  top: 48%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3bb77e;
+  z-index: 40;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.slick-arrow:hover {
+  background-color: #3bb77e;
+}
+.slick-arrow.slick-next {
+  right: 2%;
+}
+.slick-arrow.slick-prev {
+  left: 2%;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 30px;
+}
+/* .slick-dots button ::after {
+  width: 12px;
+  height: 12px;
+  font-size: 22px;
+  background-color: #3bb77e;
+} */
+.cateSlider .slick-slide{
+  padding-right: 22px !important;
 }
