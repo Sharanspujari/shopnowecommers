@@ -30,11 +30,10 @@ body {
   width: 100%;
   left: 0px;
 }
-.countryWrapper .dropSelect .openSelect .downarrow{
+.countryWrapper .dropSelect .openSelect .downarrow {
   position: absolute;
-  top:15px;
-  right:10px;
-
+  top: 15px;
+  right: 10px;
 }
 .countryWrapper .dropSelect .menu {
   position: absolute;
@@ -56,8 +55,8 @@ body {
 .slick-arrow {
   position: absolute;
   top: 48%;
-  width: 50px;
-  height: 50px;
+  width:45px;
+  height: 43px;
   border-radius: 50%;
   background-color: #3bb77e;
   z-index: 40;
@@ -84,6 +83,19 @@ body {
   font-size: 22px;
   background-color: #3bb77e;
 } */
-.cateSlider .slick-slide{
-  padding-right: 22px !important;
+
+.cateSlider .slick-slide {
+  padding-right: 22px;
+  /* border-radius: 10px; */
+}
+.cateSlider .slick-arrow.slick-next {
+  top: -60px;
+  right: 10px;
+  background-color: rgb(222, 222, 222);
+}
+.cateSlider .slick-arrow.slick-prev {
+  top: -60px;
+  right: 80px;
+  left: inherit;
+  background-color: rgb(222, 222, 222);
 }

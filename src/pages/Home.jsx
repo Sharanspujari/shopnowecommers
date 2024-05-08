@@ -3,6 +3,7 @@ import SliderPage from "./SliderPage";
 import { RiArrowLeftSLine } from "react-icons/ri";
 import { RiArrowRightSLine } from "react-icons/ri";
 import CategorySlider from "../components/categorySlider/CategorySlider";
+import Banners from "../components/banners/Banners";
 
 const Home = () => {
   // const PrevArrow = (props) => {
@@ -18,6 +19,7 @@ const Home = () => {
     <div>
       <SliderPage />
       <CategorySlider />
+      <Banners />
     </div>
   );
 };
