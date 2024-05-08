@@ -13,7 +13,7 @@ const CategorySlider = () => {
   };
 
   return (
-    <div className="w-full h-auto py-5 p-4">
+    <div className="w-full h-auto py-5 pl-4 pr-0">
       <div className="container mx-auto ">
         <h2 className="text-[32px] text-[#253D4E]">Featured Categories</h2>
         <Slider {...settings} className="cateSlider mt-8">
@@ -117,7 +117,7 @@ const CategorySlider = () => {
               <p className="text-[#7e7e7e] text-[15px]">54 items</p>
             </div>
           </div>
-          
+
         </Slider>
       </div>
     </div>
