@@ -8,6 +8,7 @@ import Banners from "../components/banners/Banners";
 import Product from "../components/products/Product";
 import bannerImage from "../../src/assets/banner-4.png";
 import { TiArrowRight } from "react-icons/ti";
+import TopProducts from "../components/TopProducts";
 
 const Home = () => {
   var settings = {
@@ -142,6 +143,26 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section className="w-full h-auto py-12 px-4">
+        <div className="container mx-auto">
+          <div className="flex items-center justify-start gap-6">
+            <div className="topProductWrapper">
+              <TopProducts title="Top Selling" />
+            </div>
+            <div className="topProductWrapper">
+              <TopProducts title="Trending Products" />
+            </div>
+            <div className="topProductWrapper">
+              <TopProducts title="Recently added"/>
+            </div>
+            <div className="topProductWrapper">
+              <TopProducts title="Top Rated" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <br />
       <br />
       <br />

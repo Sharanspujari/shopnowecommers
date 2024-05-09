@@ -46,7 +46,13 @@
   .headerFixed {
     @apply fixed top-0;
   }
-  .productSlide .slick-slide{
-    @apply px-2 pl-2
+  .productSlide .slick-slide {
+    @apply px-2 pl-2;
+  }
+  .topSellingHead {
+    @apply text-[24px] text-[#253D4E] pb-[16px] relative after:w-full after:h-[1px] after:bg-[#dedede] after:absolute after:bottom-0 after:left-0 after:mt-6 before:w-[26%] before:h-[3px] before:bg-green-200 before:absolute before:bottom-0 before:left-0 before:z-10;
+  }
+  .topProductWrapper {
+    @apply w-[25%];
   }
 }
