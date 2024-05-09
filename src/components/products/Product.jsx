@@ -6,13 +6,13 @@ import { FaRegHeart } from "react-icons/fa";
 import { TbArrowsShuffle } from "react-icons/tb";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import Tooltip from "@mui/material/Tooltip";
-
+import productImage from "../../assets/product-7-1.jpg"
 const Product = ({ tag, title }) => {
   return (
-    <div className="w-full h-auto border overflow-hidden relative rounded-xl p-[15px] hover:border-green-200 hover:shadow-md group">
+    <div className=" w-full h-auto border overflow-hidden relative rounded-xl p-[15px] hover:border-green-200 hover:shadow-md group">
       {tag !== null && tag !== undefined && (
         <span
-          className={`${tag} absolute top-0 left-0  w-14 text-center z-50 text-[#fff] p-1 text-[14px] rounded-br-2xl`}
+          className={`${tag} absolute top-0 left-0  w-14 text-center z-10 text-[#fff] p-1 text-[14px] rounded-br-2xl`}
         >
           {title}
         </span>
@@ -22,7 +22,7 @@ const Product = ({ tag, title }) => {
         <Link>
           <div className="w-full overflow-hidden relative">
             <img
-              src="https://nest-frontend-v6.netlify.app/assets/imgs/shop/product-4-2.jpg"
+              src={productImage}
               className="w-50 h-50 transition-all duration-300 ease-in-out hover:scale-150"
             />
             {/* overley */}

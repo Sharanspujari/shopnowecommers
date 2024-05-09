@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoGridOutline } from "react-icons/io5";
 import { ImHeadphones } from "react-icons/im";
 import { Link } from "react-router-dom";
+
 const Nav = () => {
+  const headerRef = useRef();
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      let position = window.pageYOffset;
+      console.log("position: ", position);
+      if (position > 100) {
+        headerRef.current.classList.add("headerFixed");
+      } else {
+        headerRef.current.classList.remove("headerFixed");
+      }
+    });
+  },[]);
   return (
-    <div className="w-full h-[70px] m-auto border-t border-b flex items-center">
+    <div ref={headerRef} className="headerFixed w-full h-[70px] m-auto border-t border-b flex items-center  bg-[#fff] z-50 shadow-md">
       <div className="container  mx-auto ">
         <div className="flex relative  ml-4 items-center justify-between  mx-auto">
           <div className="flex items-center justify-center ">
@@ -21,11 +34,11 @@ const Nav = () => {
           <div className="w-auto ml-0 mr-36 static ">
             <nav>
               <ul className="flex items-center mb-0">
-                <li >
+                <li>
                   <button type="button" className="navLi">
                     <Link>Deals</Link>
                   </button>
-                </li >
+                </li>
                 <li className="ml-1 ">
                   <button type="button" className="navLi">
                     <Link>Home</Link>
@@ -49,7 +62,7 @@ const Nav = () => {
                 <li className="flex ml-1 static group">
                   <Link>
                     <button type="button" className="navLi ">
-                      Mega menu <MdKeyboardArrowDown className="ml-2"/>
+                      Mega menu <MdKeyboardArrowDown className="ml-2" />
                     </button>
                   </Link>
 
@@ -153,7 +166,7 @@ const Nav = () => {
                     <button type="button" className="navLi">
                       {" "}
                       Pages
-                      <MdKeyboardArrowDown className="ml-2"/>
+                      <MdKeyboardArrowDown className="ml-2" />
                     </button>
                   </Link>
                   {/* submenu of pages */}

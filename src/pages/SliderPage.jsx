@@ -7,6 +7,7 @@ import { RiArrowLeftSLine } from "react-icons/ri";
 import { RiArrowRightSLine } from "react-icons/ri";
 
 const SliderPage = () => {
+  
   var settings = {
     dots: true,
     infinite: true,

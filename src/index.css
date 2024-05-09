@@ -43,4 +43,10 @@
   .orangeBadge {
     @apply bg-orange-400;
   }
+  .headerFixed {
+    @apply fixed top-0;
+  }
+  .productSlide .slick-slide{
+    @apply px-2 pl-2
+  }
 }

@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full h-auto m-auto py-[30px] mx-0">
+      <header className="w-full h-auto m-auto py-[30px] mx-0 ">
         <div className=" mx-[10px] relative ">
           <div className="flex items-center ">
             <div className="w-64">

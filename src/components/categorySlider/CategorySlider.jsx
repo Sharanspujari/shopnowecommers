@@ -117,7 +117,6 @@ const CategorySlider = () => {
               <p className="text-[#7e7e7e] text-[15px]">54 items</p>
             </div>
           </div>
-
         </Slider>
       </div>
     </div>
