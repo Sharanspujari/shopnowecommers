@@ -49,21 +49,36 @@ const Home = () => {
             </ul>
           </div>
 
-          <div className="flex gap-5 py-[30px] px-0">
-            <div className="w-[20%]">
+          <div className="grid grid-cols-5 gap-5 py-[30px] px-0 ">
+            <div className="w-full">
+              <Product tag={"pinkBadge"} title="Hot" />
+            </div>
+            <div className="w-full">
+              <Product tag="greenBadge" title="New"/>
+            </div>
+            <div className="w-full">
+              <Product tag="blueBadge" title="Sale"/>
+            </div>
+            <div className="w-full">
+              <Product tag="orangeBadge"  title="-14%"/>
+            </div>
+            <div className="w-full">
+              <Product tag="greenBadge" title="New"/>
+            </div>
+            <div className="w-full">
+              <Product tag="blueBadge" title="Sale"/>
+            </div>
+            <div className="w-full">
+              <Product tag="greenBadge" title="New"/>
+            </div>
+            <div className="w-full">
+              <Product tag="orangeBadge" title="-14%"/>
+            </div>
+            <div className="w-full">
               <Product />
             </div>
-            <div className="w-[20%]">
-              <Product />
-            </div>
-            <div className="w-[20%]">
-              <Product />
-            </div>
-            <div className="w-[20%]">
-              <Product />
-            </div>
-            <div className="w-[20%]">
-              <Product />
+            <div className="w-full">
+              <Product tag={"pinkBadge"}  title="Hot"/>
             </div>
           </div>
         </div>
