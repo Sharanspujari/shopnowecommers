@@ -55,4 +55,10 @@
   .topProductWrapper {
     @apply w-[25%];
   }
+  .footerContactInfo {
+    @apply text-[#5a5a5a] ml-2;
+  }
+  .foorterPageLinks {
+    @apply mb-3 hover:text-green-600 relative transform duration-300 ease-in-out hover:translate-x-2;
+  }
 }
