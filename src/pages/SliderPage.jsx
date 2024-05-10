@@ -5,9 +5,8 @@ import slider2 from "../assets/slider-image-2.png";
 import { BsSend } from "react-icons/bs";
 import { RiArrowLeftSLine } from "react-icons/ri";
 import { RiArrowRightSLine } from "react-icons/ri";
-
+import NewsLetter from "../components/newsLetter/NewsLetter";
 const SliderPage = () => {
-  
   var settings = {
     dots: true,
     infinite: true,
@@ -25,7 +24,7 @@ const SliderPage = () => {
           <div className="relative">
             <img src={slider1} className="w-full rounded-3xl overflow-hidden" />
             {/* image text */}
-            <div className="absolute top-[15%] left-[8%] z-50">
+            <div className="absolute top-[15%] left-[7%] z-50">
               <h2 className="text-[70px] font-semibold text-[#253D4E] leading-[73px]">
                 Don't miss amazing <br />
                 grocery deals
@@ -49,16 +48,7 @@ const SliderPage = () => {
             </div>
           </div>
         </Slider>
-        <div className="absolute w-[444px] bottom-28 left-[8.1%] z-30 ">
-          <BsSend className="absolute top-[24px] left-[20px] text-[17px] text-gray-500"/>
-          <input
-            placeholder="Your email address"
-            className="w-full h-full bg-[#fff] rounded-full py-[21px] outline-none pl-14 pr-[175px]"
-          />
-          <button className="bg-[#3bb77e] text-[#fff] py-[20px] px-11 rounded-full absolute top-0 right-0">
-            Subscribe
-          </button>
-        </div>
+        <NewsLetter />
       </div>
     </section>
   );

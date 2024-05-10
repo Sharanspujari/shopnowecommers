@@ -9,7 +9,8 @@ import Product from "../components/products/Product";
 import bannerImage from "../../src/assets/banner-4.png";
 import { TiArrowRight } from "react-icons/ti";
 import TopProducts from "../components/TopProducts";
-
+import newsLetterImage from "../assets/newsLetterImage-9.png";
+import NewsLetter from "../components/newsLetter/NewsLetter";
 const Home = () => {
   var settings = {
     dots: false,
@@ -154,7 +155,7 @@ const Home = () => {
               <TopProducts title="Trending Products" />
             </div>
             <div className="topProductWrapper">
-              <TopProducts title="Recently added"/>
+              <TopProducts title="Recently added" />
             </div>
             <div className="topProductWrapper">
               <TopProducts title="Top Rated" />
@@ -163,6 +164,27 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="w-full h-auto py-6 px-4">
+        <div className="container mx-auto">
+          <div className="newsLetterBg w-full rounded-3xl h-auto flex pt-20 px-[70px] relative">
+            <div className="w-[56%] ">
+              <div className="ml-8 ">
+                <h2 className="text-[38px] text-[#253D4E] leading-10 font-medium mb-4">
+                  Stay home & get your daily <br /> needs from our shop
+                </h2>
+
+                <p className="text-[#a0a0a0] text-[18px] font-medium">
+                  Start You'r Daily Shopping with <span className="text-green-600">Nest Mart</span>
+                </p>
+              </div>
+              <NewsLetter />
+            </div>
+            <div className="w-[44%]">
+              <img src={newsLetterImage} />
+            </div>
+          </div>
+        </div>
+      </section>
       <br />
       <br />
       <br />
