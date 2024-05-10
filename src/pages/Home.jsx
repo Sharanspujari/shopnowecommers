@@ -11,6 +11,8 @@ import { TiArrowRight } from "react-icons/ti";
 import TopProducts from "../components/TopProducts";
 import newsLetterImage from "../assets/newsLetterImage-9.png";
 import NewsLetter from "../components/newsLetter/NewsLetter";
+import Footer from "../components/Footer";
+
 const Home = () => {
   var settings = {
     dots: false,
@@ -174,7 +176,8 @@ const Home = () => {
                 </h2>
 
                 <p className="text-[#a0a0a0] text-[18px] font-medium">
-                  Start You'r Daily Shopping with <span className="text-green-600">Nest Mart</span>
+                  Start You'r Daily Shopping with{" "}
+                  <span className="text-green-600">Nest Mart</span>
                 </p>
               </div>
               <NewsLetter />
@@ -185,6 +188,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer />
       <br />
       <br />
       <br />
