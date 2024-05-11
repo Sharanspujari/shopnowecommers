@@ -1,3 +1,4 @@
 penign and improved portion info
 
 1.heading setup in 8th video
+2. filter by price card scroll bar in 10th video 37:30sec

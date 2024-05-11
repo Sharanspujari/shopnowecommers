@@ -16,11 +16,120 @@ import {
   FaPinterestP,
   FaYoutube,
 } from "react-icons/fa";
+import newsLetterImage from "../assets/newsLetterImage-9.png";
+import NewsLetter from "../components/newsLetter/NewsLetter";
+import priceTagIcon from "../assets/priceicon-1.svg";
+import deliveryIcon from "../assets/deliveryhandicon-2.svg";
+import DealsIcon from "../assets/docicon-3.svg";
+import WideAssortIcon from "../assets/assorticon-4.svg";
+import EasyReturnIcon from "../assets/easyreturnicon-5.svg";
+
 const Footer = () => {
   return (
-    <footer className="w-full h-auto mt-6 mb-4 px-2">
+    <footer className="w-full h-auto mt-2 mb-4">
+      <section className="w-full h-auto py-6 px-4">
+        <div className="container mx-auto">
+          <div className="newsLetterBg w-full rounded-3xl h-auto flex pt-20 px-[70px] relative">
+            <div className="w-[56%] ">
+              <div className="ml-8 ">
+                <h2 className="text-[38px] text-[#253D4E] leading-10 font-medium mb-4">
+                  Stay home & get your daily <br /> needs from our shop
+                </h2>
+
+                <p className="text-[#a0a0a0] text-[18px] font-medium">
+                  Start You'r Daily Shopping with{" "}
+                  <span className="text-green-600">Nest Mart</span>
+                </p>
+              </div>
+              <NewsLetter />
+            </div>
+            <div className="w-[44%]">
+              <img src={newsLetterImage} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits cards section */}
+      <section className="w-full h-auto py-6 px-4">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-5 gap-4">
+            <div className="flex items-center justify-between bg-[#F4F6FA] py-4 px-6 justify-between  rounded-xl  group">
+              <img
+                src={priceTagIcon}
+                className="w-[25%] relative transform duration-300 ease-in-out group-hover:-translate-y-2"
+              />
+
+              <div className="pl-6 w-[75%]">
+                <h2 className="text-[18px] text-[#253D4E]">
+                  Best prices & <br /> offers
+                </h2>
+                <p className="text-[#a4a4a4] text-[15px]  pt-2">
+                  Orders $50 or more
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-between bg-[#F4F6FA] py-3 px-6  rounded-xl group">
+              <img
+                src={deliveryIcon}
+                className="w-[25%] relative transform duration-300 ease-in-out group-hover:-translate-y-2"
+              />
+
+              <div className="pl-6 w-[75%]">
+                <h2 className="text-[18px] text-[#253D4E]">Free delivery</h2>
+                <p className="text-[#a4a4a4] text-[15px]  pt-2">
+                  24/7 amazing services
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center bg-[#F4F6FA] py-5 px-6  rounded-xl group">
+              <img
+                src={DealsIcon}
+                className="w-[25%] relative transform duration-300 ease-in-out group-hover:-translate-y-2"
+              />
+
+              <div className="pl-6  w-[75%]">
+                <h2 className="text-[18px] text-[#253D4E]">Great daily deal</h2>
+                <p className="text-[#a4a4a4] text-[15px]  pt-2">
+                  When you sign up
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center bg-[#F4F6FA] py-5 px-6 rounded-xl group">
+              <img
+                src={WideAssortIcon}
+                className="w-[25%] relative transform duration-300 ease-in-out group-hover:-translate-y-2"
+              />
+
+              <div className="pl-6  w-[75%]">
+                <h2 className="text-[18px] text-[#253D4E]">Wide assortment</h2>
+                <p className="text-[#a4a4a4] text-[15px]  pt-2">
+                  Mega Discounts
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center bg-[#F4F6FA] py-5 px-6 rounded-xl group">
+              <img
+                src={EasyReturnIcon}
+                className="w-[25%] relative transform duration-300 ease-in-out group-hover:-translate-y-2"
+              />
+
+              <div className="pl-6  w-[75%]">
+                <h2 className="text-[18px] text-[#253D4E]">Easy returns</h2>
+                <p className="text-[#a4a4a4] text-[15px]  pt-2">
+                  Within 30 days
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div className="container mx-auto">
-        <div className="flex  justify-between ">
+        <div className="flex  justify-between mx-2">
           <div className="w-[20%] ">
             <Link to="/">
               <img src={logo} alt="logo" />
@@ -195,7 +304,7 @@ const Footer = () => {
         </div>
         <hr className="mt-6" />
 
-        <div className=" flex items-center mt-5 ">
+        <div className=" flex items-center mt-5 mx-2">
           <div className="w-[30%]   ">
             <p className="text-[#7E7E7E]">
               © 2024, Nest - HTML Ecommerce Template <br /> All rights reserved
@@ -231,23 +340,33 @@ const Footer = () => {
           <div className="w-[30%] flex flex-col items-end ml-24 ">
             <div className="flex items-center ">
               <h3>Follow Us</h3>
-              <div className="flex p-4 ">
-                <div className="socilaIconsWrapper">
-                  <FaFacebookF />
-                </div>
-                <div className="socilaIconsWrapper">
-                  <FaTwitter />
-                </div>
-                <div className="socilaIconsWrapper">
-                  <FaInstagram />
-                </div>
-                <div className="socilaIconsWrapper">
-                  <FaPinterestP />
-                </div>
-                <div className="socilaIconsWrapper">
-                  <FaYoutube />
-                </div>
-              </div>
+              <ul className="flex p-4 ">
+                <Link>
+                  <li className="socilaIconsWrapper">
+                    <FaFacebookF />
+                  </li>
+                </Link>
+                <Link>
+                  <li className="socilaIconsWrapper">
+                    <FaTwitter />
+                  </li>
+                </Link>
+                <Link>
+                  <li className="socilaIconsWrapper">
+                    <FaInstagram />
+                  </li>
+                </Link>
+                <Link>
+                  <li className="socilaIconsWrapper">
+                    <FaPinterestP />
+                  </li>
+                </Link>
+                <Link>
+                  <li className="socilaIconsWrapper">
+                    <FaYoutube />
+                  </li>
+                </Link>
+              </ul>
             </div>
             <p className="text-gray-500">
               Up to 15% discount on your first subscribe

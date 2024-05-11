@@ -41,7 +41,7 @@ const Nav = () => {
                 </li>
                 <li className="ml-1 ">
                   <button type="button" className="navLi">
-                    <Link>Home</Link>
+                    <Link to={"/"}>Home</Link>
                   </button>
                 </li>
                 <li className="ml-1">

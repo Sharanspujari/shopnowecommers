@@ -55,7 +55,7 @@ body {
 .slick-arrow {
   position: absolute;
   top: 48%;
-  width:45px;
+  width: 45px;
   height: 43px;
   border-radius: 50%;
   background-color: #3bb77e;
@@ -99,6 +99,9 @@ body {
   left: inherit;
   background-color: rgb(222, 222, 222);
 }
-.newsLetterBg{
-background: url(../src/assets/bgnewsletter-10.png);
+.newsLetterBg {
+  background: url(../src/assets/bgnewsletter-10.png);
+}
+.breadCrumbBg {
+  background: url(../src/assets/breadcrumbBG-bg.png);
 }
