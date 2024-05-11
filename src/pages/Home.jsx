@@ -272,14 +272,6 @@ const Home = () => {
       </section>
 
       <Footer />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 };

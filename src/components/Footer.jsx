@@ -8,11 +8,19 @@ import { GoStopwatch } from "react-icons/go";
 import AppStore from "../assets/app-store.jpg";
 import PlayStore from "../assets/google-play.jpg";
 import PaymentIcon from "../assets/payment-method.png";
+import { FiPhoneCall } from "react-icons/fi";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaPinterestP,
+  FaYoutube,
+} from "react-icons/fa";
 const Footer = () => {
   return (
-    <footer className="w-full h-auto py-12 px-2">
+    <footer className="w-full h-auto mt-6 mb-4 px-2">
       <div className="container mx-auto">
-        <div className="flex  justify-between">
+        <div className="flex  justify-between ">
           <div className="w-[20%] ">
             <Link to="/">
               <img src={logo} alt="logo" />
@@ -183,6 +191,67 @@ const Footer = () => {
                 <img src={PaymentIcon} />
               </Link>
             </div>
+          </div>
+        </div>
+        <hr className="mt-6" />
+
+        <div className=" flex items-center mt-5 ">
+          <div className="w-[30%]   ">
+            <p className="text-[#7E7E7E]">
+              © 2024, Nest - HTML Ecommerce Template <br /> All rights reserved
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center  w-[40%] ml-24">
+            <div className="flex  items-center mr-12">
+              <span>
+                <FiPhoneCall className="text-[38px] text-gray-600" />
+              </span>
+              <div className="ml-2 ">
+                <h3 className="text-green-600 text-[24px]">9800-999</h3>
+                <p className="mb-0 text-[12px] text-gray-500">
+                  Working 8:00 - 22:00
+                </p>
+              </div>
+            </div>
+
+            <div className="flex  items-center">
+              <span>
+                <FiPhoneCall className="text-[38px] text-gray-600" />
+              </span>
+              <div className="ml-2  ">
+                <h3 className="text-green-600 text-[24px]">9800-999</h3>
+                <p className="mb-0 text-[12px] text-gray-500">
+                  24/7 Support Center
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-[30%] flex flex-col items-end ml-24 ">
+            <div className="flex items-center ">
+              <h3>Follow Us</h3>
+              <div className="flex p-4 ">
+                <div className="socilaIconsWrapper">
+                  <FaFacebookF />
+                </div>
+                <div className="socilaIconsWrapper">
+                  <FaTwitter />
+                </div>
+                <div className="socilaIconsWrapper">
+                  <FaInstagram />
+                </div>
+                <div className="socilaIconsWrapper">
+                  <FaPinterestP />
+                </div>
+                <div className="socilaIconsWrapper">
+                  <FaYoutube />
+                </div>
+              </div>
+            </div>
+            <p className="text-gray-500">
+              Up to 15% discount on your first subscribe
+            </p>
           </div>
         </div>
       </div>

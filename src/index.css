@@ -59,6 +59,10 @@
     @apply text-[#5a5a5a] ml-2;
   }
   .foorterPageLinks {
-    @apply mb-3 hover:text-green-600 relative transform duration-300 ease-in-out hover:translate-x-2;
+    @apply mb-2 hover:text-green-600 relative transform duration-300 ease-in-out hover:translate-x-2;
+  }
+  .socilaIconsWrapper{
+    @apply w-8 h-8 flex items-center justify-center ml-3 rounded-2xl bg-green-600 text-white text-center
   }
 }
+ 
