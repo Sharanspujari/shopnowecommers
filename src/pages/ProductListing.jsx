@@ -3,6 +3,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
+import Product from "../components/products/Product";
 const ProductListing = () => {
   return (
     <section className="w-full h-auto py-8 px-4">
@@ -29,7 +30,77 @@ const ProductListing = () => {
             <div className="w-[18%]">
               <Sidebar />
             </div>
-            <div className="w-[82%]">lists</div>
+
+            <div className="w-[82%]">
+
+              <div>
+
+                
+              </div>
+              
+              <div className="grid grid-cols-5 gap-5 py-[30px] px-0 ">
+                <div className="w-full">
+                  <Product tag={"pinkBadge"} title="Hot" />
+                </div>
+                <div className="w-full">
+                  <Product tag="greenBadge" title="New" />
+                </div>
+                <div className="w-full">
+                  <Product tag="blueBadge" title="Sale" />
+                </div>
+                <div className="w-full">
+                  <Product tag="orangeBadge" title="-14%" />
+                </div>
+                <div className="w-full">
+                  <Product tag="greenBadge" title="New" />
+                </div>
+                <div className="w-full">
+                  <Product tag="blueBadge" title="Sale" />
+                </div>
+                <div className="w-full">
+                  <Product tag="greenBadge" title="New" />
+                </div>
+                <div className="w-full">
+                  <Product tag="orangeBadge" title="-14%" />
+                </div>
+                <div className="w-full">
+                  <Product />
+                </div>
+                <div className="w-full">
+                  <Product tag={"pinkBadge"} title="Hot" />
+                </div>
+                <div className="w-full">
+                  <Product tag="orangeBadge" title="-14%" />
+                </div>
+                <div className="w-full">
+                  <Product />
+                </div>
+                <div className="w-full">
+                  <Product tag={"pinkBadge"} title="Hot" />
+                </div>
+                <div className="w-full">
+                  <Product tag="orangeBadge" title="-14%" />
+                </div>
+                <div className="w-full">
+                  <Product />
+                </div>
+                <div className="w-full">
+                  <Product tag="orangeBadge" title="-14%" />
+                </div>
+                <div className="w-full">
+                  <Product />
+                </div>
+                <div className="w-full">
+                  <Product tag={"pinkBadge"} title="Hot" />
+                </div>
+                <div className="w-full">
+                  <Product tag="orangeBadge" title="-14%" />
+                </div>
+                <div className="w-full">
+                  <Product />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -34,6 +34,7 @@ const Product = ({ tag, title }) => {
                     title="Add To Wishlist"
                     arrow="green"
                     placement="top"
+                    color="success"
                   >
                     <a className="block p-[10px] border-r border-green-200">
                       <FaRegHeart className="hover:text-yellow-500" />
