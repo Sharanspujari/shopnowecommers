@@ -20,7 +20,7 @@
     @apply cursor-pointer;
   }
   .listItem {
-    @apply list-none text-[17px] w-full p-[10px] hover:bg-cyan-600 text-[rgba(0,0,0,0.7)];
+    @apply list-none text-[15px] w-full p-[10px] hover:bg-green-200 text-[rgba(39,39,39,0.6)];
   }
   .accountDropLi {
     @apply flex list-none m-0  h-10;

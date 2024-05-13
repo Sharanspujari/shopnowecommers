@@ -13,8 +13,7 @@ const SelectDropdown = ({ dataList, placeholder, icon }) => {
   console.log("data2: ", data2);
 
   const openSelect = () => {
-    setIsOpenSelect((prev) => setIsOpenSelect(!prev));
-    console.log(isOpenSelect);
+    setIsOpenSelect(() => setIsOpenSelect(!isOpenSelect));
   };
 
   const closeSelect = (index, value) => {
@@ -49,12 +48,12 @@ const SelectDropdown = ({ dataList, placeholder, icon }) => {
         </span>
 
         {isOpenSelect && (
-          <div className="menu w-[300px]  h-auto absolute -left-4 top-[100%] bg-[#fff] z-99 shadow-lg  p-[15px]">
+          <div className="menu w-[260px]  h-auto absolute -left-4 top-[100%] bg-[#fff] z-99 shadow-lg  p-[15px]">
             <div>
               <input
                 type="text"
                 onChange={handleSearch}
-                className=" w-full h-[40px] border border-[#bce3c9] outline-none py-0 px-[15px] rounded-sm"
+                className=" w-full h-[40px] border border-[#bce3c9] outline-none py-0 px-[15px] mr-3 rounded-sm"
                 placeholder="Search here..."
               />
 
@@ -72,7 +71,7 @@ const SelectDropdown = ({ dataList, placeholder, icon }) => {
                   return (
                     <li
                       key={i + 1}
-                      className={`listItem rounded-md ${
+                      className={`listItem rounded-md${
                         selectedIndex === i + 1 ? "bg-gray-200 font-bold " : ""
                       }`}
                       onClick={() => closeSelect(i + 1, item)}
