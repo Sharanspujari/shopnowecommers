@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Footer from "./components/Footer";
 import ProductListing from "./pages/ProductListing";
 import PageNotFound from "./pages/PageNotFound";
+import ProductDetails from "./pages/ProductDetails";
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ function App() {
           path="/productlisting"
           element={<ProductListing />}
         />
+        <Route path="/product/details" element={<ProductDetails />} />
         <Route exact={true} path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
